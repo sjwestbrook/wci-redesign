@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
@@ -14,35 +15,181 @@
 </head>
 
 <body>
-  
+  <!--
   <div class="container">
     <div class="row">
-      <div class="col-md-9">
+      <div class="col-md-12">
         <a href="index.html">
-          <img src="images/home/Workforce%20Connections%20Logo.png" alt="WCI Home" />
+          <img class="logo" src="images/home/Workforce%20Connections%20Logo.png" alt="WCI Home" />
         </a>
       </div>
-      <div class="col-md-1">
-        <a href="" title="WCI on Facebook">
-          <i class="fa fa-facebook-square"></i>
-        </a>
+    </div>
+  </div>
+  -->
+  
+  <nav class="navbar transparent">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <!-- mobile menu -->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">
+        <img class="logo" src="images/home/Workforce%20Connections%20Logo.png" alt="WCI Home" />
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">History</a></li>
+            <li><a href="http://www.workforceconnections.org/WCI%20New/Vision.html">Mission, Vison &amp; Values</a></li>
+            <li><a href="http://www.workforceconnections.org/WCI%20New/Board.html">Board of Directors</a></li>
+            <li><a href="#">Staff &amp; Locations</a></li>
+            <li><a href="http://www.workforceconnections.org/WCI%20New/AReports.html">Annual Reports</a></li>
+            <li><a href="http://www.workforceconnections.org/WCI%20New/SStories.html">Stories</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Business Services</a></li>
+        <li><a href="#">Job Seeker Services</a></li>        
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Programs <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://www.workforceconnections.org/WCI%20New/W2Programs.html">Wisconsin Works</a></li>
+            <li><a href="http://www.workforceconnections.org/WCI%20New/FSETPrograms.html">Food Share Employment &amp; Training</a></li>
+            <li><a href="http://www.workforceconnections.org/WCI%20New/CFPrograms.html">Children First</a></li>
+            <li><a href="http://www.workforceconnections.org/WCI%20New/EAPrograms.html">Emergency Assistance</a></li>
+            <li><a href="http://www.workforceconnections.org/WCI%20New/WIOAPrograms.html">Workforce Innovation &amp; Opportunity Act - Adult</a></li>
+            <li><a href="http://www.workforceconnections.org/WCI%20New/DW.html">Workforce Innovation &amp; Opportunity Act - Dislocated Worker</a></li>
+            <li><a href="http://www.workforceconnections.org/WCI%20New/WISE.html">WISE Program</a></li>
+            <li><a href="http://www.workforceconnections.org/WCI%20New/SC.html">Connections to Second Chances</a></li>
+            <li><a href="http://www.workforceconnections.org/WCI%20New/WTW.html">Windows to Work</a></li>            
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Careers <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+<!--            <li><a href="http://www.workforceconnections.org/WCI%20New/HowToApplyCareer.html">How to Apply</a></li>-->
+            <li><a href="http://www.workforceconnections.org/WCI%20New/JobOppenings.html">Current Openings</a></li>
+            <li><a href="http://www.workforceconnections.org/WCI%20New/Volunteers.html">Volunteer</a></li>            
+          </ul>
+        </li>
+        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+  
+  
+<div class="container"></div>
+<div class="hero-unit"> 
+  <h1>Real People.</h1>
+  <h1>Real Success.</h1>
+  <h1>Real Impact.</h1>
+</div>
+  
+  
+  <div class="container home">
+    <div class="row">
+      <div class="col-md-3">
+        <p>
+          <a href="http://www.workforceconnections.org/WCI%20New/WCIEvents.html" title="WCI Events">
+            <img src="images/home/Calendar2.jpg" alt="WCI Events" />
+          </a>
+        </p>
       </div>
-      <div class="col-md-1">
-        <a href="" title="WCI on Twitter">
-          <i class="fa fa-twitter-square"></i>
-        </a>
+      <div class="col-md-3">
+        <p>
+          <a href="https://www.healthcare.gov/?fromLoc=MPBadge&utm_medium=widget&utm_content=180x150-en&utm_campaign=hcgov" title="Health Insurance Marketplace English">
+            <img src="images/home/180x150-badge-healthcare.jpg" alt="Health Insurance Marketplace English" />
+          </a>
+        </p>
       </div>
-      <div class="col-md-1">
-        <a href="" title="WCI on LinkedIn">
-          <i class="fa fa-linkedin-square"></i>
-        </a>
+      <div class="col-md-3">
+        <p>
+          <a href="https://www.cuidadodesalud.gov/index.html?fromLoc=MPBadge&utm_medium=widget&utm_content=180x150-en&utm_campaign=hcgov" title="Health Insurance Marketplace Spanish">
+            <img src="images/home/180x150-badge-healthcare-spanish.jpg" alt="Health Insurance Marketplace Spanish" />
+          </a>
+        </p>
+      </div>
+      <div class="col-md-3">
+        <p>
+          <a href="http://www.lacrossecounty.org/humanservices/aca/" title="">
+            <img src="images/home/acaLogo.png" alt="Affordable Care Act Enrollment Help" />
+          </a>
+        </p>
       </div>
     </div>
   </div>
   
   
   
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css"></script>
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="container-fluid bottom footer-cols">
+        <div class="col-md-3">
+          <a href="index.html">
+            <img class="footer-logo" src="images/home/Workforce%20Connections%20Logo.png" alt="WCI Home" />
+          </a>
+          <br />
+          <ul class="footer-socials">            
+            <li>
+              <a href="" title="WCI on Facebook">
+                <i class="fa fa-facebook-square"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" title="WCI on Twitter">
+                <i class="fa fa-twitter-square"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" title="WCI on LinkedIn">
+                <i class="fa fa-linkedin-square"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      
+        <div class="col-md-3 address">
+            <p>2615 East Avenue South, Suite 103</p>
+            <p>La Crosse, WI 54601</p>
+            <p><i class="fa fa-mobile"></i> &nbsp; 1-800-742-5627</p>
+            <p><i class="fa fa-mobile"></i> &nbsp; 608-789-5620</p>
+            <p><i class="fa fa-mobile"></i> &nbsp; TTY Users call through the Wisconsin Relay System</p>
+            <p>1-800-WI-RELAY (947-3529)</p>
+            <p>
+              <a href="mailto:workforceconnections@workforceconnections.org">
+                <i class="fa fa-envelope-o"></i>
+              </a> &nbsp; Email Workforce Connections, Inc.
+            </p>
+        </div>
+      
+        <div class="col-md-3">
+          <p>Workforce Connections, Inc. administers employment and training programs funded through a variety of sources including the United States Department of Labor, the Wisconsin Department of Workforce Development, the Western Wisconsin Workforce Development Board. Inc., local employers, and community organizations.</p>
+        </div>
+      
+        <div class="col-md-3">
+          <p class="bold">Affirmative Action/Equal Employment Opportunity Employer/Program</p>
+          <p>Auxiliary aids and services are available upon request to individuals with disabilities.</p>
+          <p>TTY users 1-800-947-3529 </p>
+          <p>Application materials received may be considered for other openings in the organization.</p>
+        </div>
+
+    </div>
+  </div><!-- end footer -->
+  
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>
