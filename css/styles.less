@@ -1,10 +1,17 @@
 /* WCI Styles */
 
 // VARIABLES, MIXINS, ETC
-
+@color1: rgb(20,71,52);
+@color2: lighten(@color1, 10%);
 
 .bold {
   font-weight: 700;
+}
+
+.vert-center {
+  position: absolute;
+  top: 17%;
+  left: 5%;
 }
 
 // GLOBAL STYLES
@@ -28,11 +35,26 @@ body {
   height: 100%;
 }
 
+.nav {
+  height: 60px;
+}
 
-.navbar {
+.navbar {  
+  margin-bottom: 0;
+  padding: 0 4%;
+  a {
+    color: white;
+    height: 60px;
+  }
+  
+  a.navbar-brand {
+    height: 60px;
+  }
+  
   .logo {
     margin-top: -10px;
-    width: 120px;
+//    padding: 3%;
+    width: 175px;
     height: auto;
   }
 }
@@ -49,7 +71,7 @@ body {
     font-size: 60px;
     letter-spacing: -1px;
     line-height: 1;
-    margin-bottom: 0;
+    margin-top: 10%;
   }
 }
 
@@ -73,10 +95,14 @@ body {
 
 // items below hero
 .home {
-  margin: 50px auto;
+  width: 100%;
+  background-color: @color2;
+  margin: 0;
+  padding: 3% 10%;
+  
   .row {
     padding: 0;
-    margin: 0 auto;
+    margin: 0;
   }
   .col-md-3 {
     padding: 0;
@@ -90,7 +116,8 @@ body {
 
 .footer {
   width: 100%;
-  background-color: blue;
+  background-color: rgb(20,71,52);
+  padding: 2% 0;
   
   .footer-cols {
     width: 80%;
@@ -109,7 +136,7 @@ body {
         i {
           font-size: 2em;
           color: white;
-        }        
+        } 
       } 
       
       p {
