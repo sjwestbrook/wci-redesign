@@ -3,6 +3,8 @@
 // VARIABLES, MIXINS, ETC
 @color1: rgb(20,71,52);
 @color2: lighten(@color1, 10%);
+@color3: #FFFFFF;
+@color4: rgb(188,180,52);
 
 .bold {
   font-weight: 700;
@@ -43,7 +45,7 @@ body {
   margin-bottom: 0;
   padding: 0 4%;
   a {
-    color: white;
+    color: @color3;
     height: 60px;
   }
   
@@ -53,7 +55,6 @@ body {
   
   .logo {
     margin-top: -10px;
-//    padding: 3%;
     width: 175px;
     height: auto;
   }
@@ -67,7 +68,7 @@ body {
   height:500px;  
 
   h1 {
-    color: #FFFFFF;
+    color: @color3;
     font-size: 60px;
     letter-spacing: -1px;
     line-height: 1;
@@ -101,11 +102,21 @@ body {
   padding: 3% 10%;
   
   .row {
-    padding: 0;
-    margin: 0;
+    width: 80%;
+//    padding: 0 9%;
+    margin: 0 auto;
   }
   .col-md-3 {
     padding: 0;
+    width: 190px;
+    
+    &:first-child {
+      width: 160px;
+    }
+    
+    &:last-child {
+      width: 240px;
+    }
   }
 }
 
@@ -121,10 +132,9 @@ body {
   
   .footer-cols {
     width: 80%;
-//    background-color: green;
 
     .col-md-3 {
-      color: white;
+      color: @color3;
       
       img {
         width: 100%;
@@ -135,7 +145,7 @@ body {
       .footer-socials {
         i {
           font-size: 2em;
-          color: white;
+          color: @color3;
         } 
       } 
       
