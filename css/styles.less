@@ -8,6 +8,11 @@
 @color5: rgb(0,31,94);
 @color6: rgb(117,37,61);
 @color7: rgb(220,124,44);
+@color8: lighten(@color6, 10%);
+
+
+
+// GLOBAL CLASSES
 
 .bold {
   font-weight: 700;
@@ -19,19 +24,37 @@
   left: 5%;
 }
 
-.mid-center {
-  width: 80%;
-  margin: 0 auto;
-}
-
 .pad {
   padding: 2% 0;
 }
 
+.mid-center {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 2%;
+}
+
+.page-header {
+  text-align: center;
+  background-color: @color8;
+  color: @color3;
+  margin: 0;
+  padding: 1.75% 0;
+  
+  small {
+    color: @color3;
+  }
+}
+
+
+
+
+
+
 // GLOBAL STYLES
 
 * {
-  outline: 1px solid red;
+//  outline: 1px solid red;
   box-sizing: border-box;
 }
 
@@ -229,7 +252,8 @@ body {
 
 
 // MISSION ===========================
-.mission-pics {
+
+.filler-pics {
   width: 100%;
   height: auto;
 }
@@ -238,21 +262,31 @@ body {
   font-size: 1.5em;
 }
 
-//.mission-header {
-//  
-//}
+.mission-header {
+  margin-top: 1%;  
+}
 
-//#mission {
-//  background-image: url(/images/mission.jpg);
-//  background-size: cover;
-//}
-//
-//#vision {
-//  background-image: url(/images/vision.jpg);
-//  background-size: cover;
-//}
-//
-//#values {
-//  background-image: url(/images/values.jpg);
-//  background-size: cover;
-//}
+
+
+// BUSINESS SERVICES =================
+
+.bus-serv-contacts {
+  padding: 0;
+  
+  ul {
+    padding: 0 0 3% 0;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  a {
+    color: @color5;
+
+    &:focus, &:hover {
+      color: @color7;
+      text-decoration: none;
+    }
+  }
+}
