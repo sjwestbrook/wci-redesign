@@ -5,6 +5,9 @@
 @color2: lighten(@color1, 10%);
 @color3: #FFFFFF;
 @color4: rgb(188,180,52);
+@color5: rgb(0,31,94);
+@color6: rgb(117,37,61);
+@color7: rgb(220,124,44);
 
 .bold {
   font-weight: 700;
@@ -12,14 +15,14 @@
 
 .vert-center {
   position: absolute;
-  top: 17%;
+  top: 18%;
   left: 5%;
 }
 
 // GLOBAL STYLES
 
 * {
-  outline: 1px solid red;
+//  outline: 1px solid red;
   box-sizing: border-box;
 }
 
@@ -30,31 +33,41 @@ html {
 }
 
 body {
-  outline: 1px dotted red;
   margin: 0 auto;
   padding: 0;
   max-width: 100%;
   height: 100%;
 }
 
-.nav {
-  height: 60px;
-}
 
 .navbar {  
   margin-bottom: 0;
   padding: 0 4%;
-  a {
-    color: @color3;
-    height: 60px;
-  }
+  background-color: @color6;
+  height: 80px;
   
+  .nav {
+    height: 70px;
+    padding-top: 0.75%;
+    
+    a {
+      color: @color3;
+      height: 60px;
+      margin-top: 5px;
+
+      &:hover {
+        color: @color7;
+        background-color: @color6;
+      }
+    }
+  }
+    
   a.navbar-brand {
     height: 60px;
   }
   
   .logo {
-    margin-top: -10px;
+    margin-top: -3%;
     width: 175px;
     height: auto;
   }
@@ -62,17 +75,50 @@ body {
 
 
 .hero-unit {
-  background-image:url(/images/madison.jpg);
+  background-image:url(/images/madison2.jpg);
   background-size:cover;
   background-color: #EEEEEE;
   height:500px;  
-
+  border-bottom: 1px solid @color1;
+  
   h1 {
     color: @color3;
     font-size: 60px;
     letter-spacing: -1px;
     line-height: 1;
     margin-top: 10%;
+  }
+}
+
+
+
+
+
+
+
+
+// items below hero
+.home {
+  width: 100%;
+  background-color: @color2;
+  margin: 0;
+  padding: 3% 10%;
+  
+  .row {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .col-md-3 {
+    padding: 0;
+    width: 25%;
+    
+    &:first-child {
+      width: 22%;
+    }
+    
+    &:last-child {
+      width: 27%;
+    }
   }
 }
 
@@ -92,39 +138,6 @@ body {
 }
 
 
-
-
-// items below hero
-.home {
-  width: 100%;
-  background-color: @color2;
-  margin: 0;
-  padding: 3% 10%;
-  
-  .row {
-    width: 80%;
-//    padding: 0 9%;
-    margin: 0 auto;
-  }
-  .col-md-3 {
-    padding: 0;
-    width: 190px;
-    
-    &:first-child {
-      width: 160px;
-    }
-    
-    &:last-child {
-      width: 240px;
-    }
-  }
-}
-
-#id {
-  width: 100%;
-}
-
-
 .footer {
   width: 100%;
   background-color: rgb(20,71,52);
@@ -133,6 +146,17 @@ body {
   .footer-cols {
     width: 80%;
 
+    .address {
+        a {
+          color: white;
+          
+          &:focus, &:hover {
+            color: @color7;
+            text-decoration: none;
+          }
+        }
+      }
+    
     .col-md-3 {
       color: @color3;
       
@@ -146,6 +170,11 @@ body {
         i {
           font-size: 2em;
           color: @color3;
+          
+          &:focus, &:hover {
+            color: @color7;
+            text-decoration: none;
+          }
         } 
       } 
       
