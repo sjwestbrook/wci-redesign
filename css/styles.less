@@ -10,7 +10,7 @@
 @color7: rgb(220,124,44);
 @color8: lighten(@color6, 10%);
 @color9: rgb(110,140,156);
-
+@color10: lighten(@color9, 10%);
 
 
 
@@ -60,19 +60,9 @@
   text-align: center;
 }
 
-.prog-btn {
-  background-color: @color9;
-  color: @color3;
-  border-radius: 0;
-  margin: 1%;
-}
 
-.modal-btn {
-  background-color: @color7;
-  color: @color3;
-  border-radius: 0;
-  margin: 1%;
-}
+
+
 
 // GLOBAL STYLES
 
@@ -93,7 +83,6 @@ body {
   max-width: 100%;
   height: 100%;
 }
-
 
 .navbar {  
   margin-bottom: 0;
@@ -372,5 +361,46 @@ body {
 .volunteer-link {
   a {
     text-align: center;
+  }
+}
+
+
+// PROGRAM MODALS ======================
+
+//.modal-dialog {
+//  
+//}
+
+.prog-btn {
+  background-color: @color9;
+  color: @color3;
+  border-radius: 0;
+  margin: 1%;
+  
+  &:hover {
+    background-color: @color7;
+    color: @color3;
+    border: none;
+  }
+  &:focus {
+    background-color: @color7;
+    color: @color3;
+    border: none;
+  }
+  &:active {
+    background-color: @color7;
+    color: @color3;
+    border: none;
+  }
+}
+
+.modal-footer {
+  button {
+    .modal-close-btn {
+      background-color: @color7;
+      color: @color3;
+      border-radius: 0;
+      margin: 1%;  
+    }
   }
 }
