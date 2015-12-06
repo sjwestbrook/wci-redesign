@@ -13,6 +13,7 @@
 @color9: rgb(110,140,156);
 @color10: lighten(@color9, 10%);
 @color11: rgb(252,220,4);
+@color12: #F5F5F5;
 
 .modal-btn-states {
   background-color: @color7;
@@ -25,15 +26,9 @@
 
 // GLOBAL CLASSES
 
-h3, h4, h5 {
-  text-align: center;
-  margin: 0 auto;
-  padding: 0.5%;
-}
-
 .container {
-//  background-color: #F0F5F9;
-  width: 80%;
+  background-color: @color12;
+  width: 70%;
 }
 
 .address {
@@ -69,6 +64,7 @@ h3, h4, h5 {
 .mid-center {
   width: 70%;
   margin: 0 auto;
+  padding: 0;
 }
 
 .narrow-center {
@@ -121,6 +117,22 @@ body {
 h3 {
   margin: 0;
 }
+
+h3, h4, h5 {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0.5%;
+}
+
+a {
+    color: @color5;
+
+    &:focus, &:hover {
+      color: @color7;
+      text-decoration: none;
+    }
+  }
+
 
 //===========================
 
@@ -285,8 +297,6 @@ h3 {
   background-color: #EEEEEE;
   height:500px;  
   border-bottom: 1px solid #71767A;
-//  width: 75%;
-//  margin: 0 auto;
   
   h1 {
     color: @color6;
@@ -309,7 +319,7 @@ h3 {
 // items below hero
 .home {
   width: 100%;
-  background-color: #F0F5F9;
+  background-color: @color12;
   margin: 0;
   padding: 2% 10%;
   
@@ -328,11 +338,6 @@ h3 {
     &:last-child {
       width: 27%;
     }
-    
-//    img {
-//      max-width: 180px;
-//      height: auto;
-//    }
   }
 }
 
@@ -351,6 +356,7 @@ h3 {
   }
 }
 
+// =======================
 
 .footer {
   width: 100%;
@@ -415,7 +421,70 @@ h3 {
   }
 }
 
+// =======================
 
+.footer-index {
+  width: 100%;
+  background-color: @color6;
+  padding: 0;
+  margin: 0;
+  
+  .footer-cols {
+    width: 80%;
+
+    .address {
+        a {
+          color: white;
+          
+          &:focus, &:hover {
+            color: @color7;
+            text-decoration: none;
+          }
+        }
+      }
+    
+    .col-md-3 {
+      color: @color3;
+      
+      img {
+        width: 100%;
+        height: auto;
+        padding-bottom: 3%;
+      }
+      
+      .footer-socials {
+        i {
+          font-size: 2em;
+          color: @color3;
+          
+          &:focus, &:hover {
+            color: @color7;
+            text-decoration: none;
+          }
+        } 
+      } 
+      
+      .footer-staff {
+        margin-top: 3%;
+        a {
+          color: @color3;
+          text-decoration: none;          
+          
+          &:focus, &:hover {
+            color: @color7;
+            text-decoration: none;
+          }
+        }
+      }
+      
+      p {
+        margin: 0;
+        padding:2px;
+        font-size: 0.8em;
+      }
+    }     
+  }
+}
 
 
 // MISSION ===========================
@@ -487,7 +556,7 @@ h3 {
   img {
     width: 100%;
     height: auto;
-    margin: 5% 0;
+//    margin: 5% 0;
   }
 }
 
@@ -561,7 +630,8 @@ h3 {
   color: @color3;
   border-radius: 0;
   border: none;
-  margin: 15px;  
+//  margin: 15px;
+  
   
   &:hover {
     .modal-btn-states;
@@ -570,3 +640,8 @@ h3 {
     .modal-btn-states;
   }
 }
+
+
+// ============================
+
+
