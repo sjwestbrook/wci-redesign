@@ -12,6 +12,7 @@
 @color8: lighten(@color6, 10%);
 @color9: rgb(110,140,156);
 @color10: lighten(@color9, 10%);
+@color11: rgb(252,220,4);
 
 .modal-btn-states {
   background-color: @color7;
@@ -45,7 +46,7 @@ h3, h4, h5 {
 
 .vert-center {
   position: absolute;
-  top: 18%;
+  top: 15%;
   left: 5%;
 }
 
@@ -91,11 +92,6 @@ h3, h4, h5 {
   margin: 3% auto;
 }
 
-//.center {
-//  text-align: center;
-//  width: 45%;
-//}
-
 
 
 // GLOBAL STYLES
@@ -125,13 +121,13 @@ h3 {
 .navbar {  
   margin-bottom: 0;
   padding: 0 4%;
-  background-color: @color6;
+  background-color: transparent;
   height: 80px;
   border-radius: 0;
   
   .navbar-header {
     .icon-bar {
-      background-color: @color3;
+      background-color: transparent;
     }
   }
   
@@ -143,10 +139,12 @@ h3 {
       color: @color3;
       height: 60px;
       margin-top: 5px;
+      font-weight: 600;
 
       &:hover, &:focus {
         color: @color7;
-        background-color: @color6;
+        background-color: transparent;
+        text-shadow: 1px 1px 1px #000;
       }
     }
     
@@ -197,18 +195,27 @@ h3 {
 
 
 .hero-unit {
-  background-image:url(/images/madison2.jpg);
+  background-image:url(/images/depositphotos_10900960-Casual-business-woman-sm-2.jpg);
   background-size:cover;
   background-color: #EEEEEE;
   height:500px;  
-  border-bottom: 1px solid @color1;
+  border-bottom: 1px solid #71767A;
+//  width: 75%;
+//  margin: 0 auto;
   
   h1 {
-    color: @color3;
+    color: @color6;
     font-size: 60px;
     letter-spacing: -1px;
     line-height: 1;
     margin-top: 10%;
+    text-shadow: 1px 1px 1px #000;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    
   }
 }
 
@@ -217,7 +224,7 @@ h3 {
 // items below hero
 .home {
   width: 100%;
-  background-color: @color2;
+  background-color: #F0F5F9;
   margin: 0;
   padding: 2% 10%;
   
