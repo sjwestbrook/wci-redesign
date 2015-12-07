@@ -145,7 +145,7 @@ a {
 
     .navbar-header {
       .icon-bar {
-        background-color: @color6;
+        background-color: @color3;
       }
     }
 
@@ -162,7 +162,6 @@ a {
         &:hover, &:focus {
           color: @color7;
           background-color: @color6;
-//          text-shadow: 1px 1px 1px #000;
           text-shadow: none;
         }
       }
@@ -223,7 +222,7 @@ a {
   
   .navbar-header {
     .icon-bar {
-      background-color: transparent;
+      background-color: @color7;
     }
   }
   
@@ -246,12 +245,16 @@ a {
     
     .open {
       a {
-        background-color: transparent;        
+        background-color: transparent;    
+        text-shadow: none;
+        
         &:hover {
           background-color: transparent;
+          text-shadow: none;
         }
         &:focus {
           background-color: transparent;
+          text-shadow: none;
         }
       }
     }
