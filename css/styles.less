@@ -21,17 +21,7 @@
   border: none;
 }
 
-img {
-  position: relative;
-}
 
-.cap {
-  position:absolute;
-  top: 40%;
-  left: 32%;
-  font-size: 2em;
-  font-weight: 700;
-}
 
 
 // GLOBAL CLASSES
@@ -48,6 +38,11 @@ img {
 .centered-img {
   display: block;
   margin: 4% auto;
+}
+
+.small-img {
+  width: 60%;
+  height: auto;
 }
 
 .container {
@@ -682,12 +677,26 @@ figcaption {
 }
 
 
-// JOB SEEKER SERVICES
+// JOB SEEKER SERVICES ===============
 .job-seekers {
   img {
-    width: 100%;
+    width: 80%;
     height: auto;
     display: block;
+    margin: 0 auto;
+    padding: 2%;
+  }
+}
+
+
+// BUSINESS SERVICES ================== 
+
+.business {
+  img {
+    width: 75%;
+    height: auto;
+    display: block;
+    text-align: center;
     margin: 0 auto;
     padding: 2%;
   }
@@ -734,11 +743,12 @@ figcaption {
   margin: 0 auto;
 }
 
-
 .modal-header {
   background-color: @color6; 
   color: @color3;
   border-bottom: 5px solid @color8;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   
   .close {
     color: @color3;
@@ -749,12 +759,14 @@ figcaption {
 .modal-footer {
   background-color: @color1; 
   border-top: 5px solid @color2;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .prog-btn {
   background-color: @color9;
   color: @color3;
-  border-radius: 0;
+  border-radius: 5px;
   border: none;
 //  margin: 15px;
   
@@ -825,4 +837,18 @@ iframe {
   a {
     text-align: center;
   }
+}
+
+// SUCCESS, REPORTS =============
+
+img {
+  position: relative;
+}
+
+.cap {
+  position:absolute;
+  top: 40%;
+  left: 32%;
+  font-size: 2em;
+  font-weight: 700;
 }
