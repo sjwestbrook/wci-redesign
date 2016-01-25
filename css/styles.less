@@ -337,6 +337,8 @@ figcaption {
   background-color: @color6;
   height: 60px;
   border-radius: 0;
+  position: relative;
+    z-index: 10000;
   
   .navbar-header {
     height: 60px;
@@ -349,6 +351,10 @@ figcaption {
   .nav {
     padding-top: 5px;
     height: 60px;
+    
+    .dropdown-menu {
+      background-color: rgb(91,91,91); 
+    }
     
     a {
       color: @color3;
@@ -369,11 +375,11 @@ figcaption {
         text-shadow: none;
         
         &:hover {
-          background-color: transparent;
+          background-color: transparent; 
           text-shadow: none;
         }
         &:focus {
-          background-color: transparent;
+          background-color: transparent; 
           text-shadow: none;
         }
       }
@@ -383,14 +389,14 @@ figcaption {
       width: 100%;   
       li {
         a:hover {
-          background-color: transparent;
+          background-color: rgb(91,91,91); 
           background-image: none;
         }
       }
     }
     
     .drop-links {
-      color: @color1;
+//      color: @color1;
       height: 2em;
       word-wrap: normal;
       
@@ -1041,7 +1047,9 @@ img {
 }
 
 @media (max-width: 981px) {
-
+//   .dropdown-menu {
+//      background-color: rgb(91,91,91); 
+//    }
   
     .navbar-header {
         float: none;
@@ -1069,93 +1077,30 @@ img {
     }
     .navbar-nav>li {
         float: none;
-        background-color: lightgrey;
-        color: black;
     }
     .navbar-nav>li>a {
         padding-top: 10px;
         padding-bottom: 10px;
-      color: black;
+        color: white;
         &:hover {
           color: @color7;
         }
     }
     .collapse.in{
         display:block !important;
-      background-color: lightgrey;
-       color: black;
+      background-color: rgb(91,91,91);
+      height: 220px;
     }
    .navbar-nav .open .dropdown-menu {
        position: static;
        float: none;
        width: auto;
        margin-top: 0;
-       background-color: lightgrey;
-       color: black;
+       background-color: rgb(91,91,91); 
        border: 0;
        -webkit-box-shadow: none;
        box-shadow: none;
     }
-  
-  
-//  ===
-//  
-//  .nav {
-//    padding-top: 5px;
-//    height: 60px;
-//    
-//    a {
-//      color: black;
-//      background-color: lightgrey;
-//      height: 30px;
-//      font-weight: 600;
-//
-//      &:hover, &:focus {
-//        color: @color7;
-//        background-color: lightgrey;
-//        text-shadow: 1px 1px 1px #000;
-//      }
-//    }
-//    
-//    .open {
-//      a {
-//        background-color: lightgrey;    
-//        text-shadow: none;
-//        
-//        &:hover {
-//          background-color: lightgrey;
-//          text-shadow: none;
-//        }
-//        &:focus {
-//          background-color: lightgrey;
-//          text-shadow: none;
-//        }
-//      }
-//    }
-//  
-//    .dropdown-menu {
-//      width: 100%;   
-//      background-color: lightgrey;
-//      color: black;
-//      li {
-//        a:hover {
-//          background-color: lightgrey;
-//          background-image: none;
-//        }
-//      }
-//    }
-//    
-//    .drop-links {
-//      color: black;
-//      height: 2em;
-//      word-wrap: normal;
-//      
-//      &:hover, &:focus {
-//        color: @color7;
-//      }      
-//      
-//    }
-//  }
 }
 
 
