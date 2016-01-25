@@ -34,8 +34,7 @@
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="navbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="index.html">Home</a></li>            
+        <ul class="nav navbar-nav navbar-right">          
           <li><a href="business-services.html">Business Solutions</a></li>
           <li><a href="job-seeker.html">Job Seeker Services</a></li>        
           <li class="dropdown">
@@ -66,12 +65,19 @@
             </ul>
           </li>
           <li><a href="resources.html">Resources</a></li>
-          <li><a href="careers.html">Careers &amp; Volunteer</a></li>
+          <li class="dropdown">
+            <a href="programs.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Careers &amp; Volunteer <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="drop-links" href="careers.html">Careers</a></li>
+              <li><a class="drop-links" href="volunteer.html">Volunteer</a></li>
+            </ul>
+          </li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us<span class="caret"></span></a>
             <ul class="dropdown-menu">             
               <li>
-                <a class="drop-links" href="#">A word from our <br />Executive Director</a>
+                <a class="drop-links" href="executive-director.html">A word from our <br />Executive Director</a>
               </li>
               <br />
               <li>
@@ -105,7 +111,7 @@
   <div class="container pad">
     <div class="row mid-center">
       <div class="col-md-12">
-        <img src="images/3598925_stock-photo-white-bar-jail-cell-perspective-locked.jpg" width="100%" />
+<!--        <img src="images/3598925_stock-photo-white-bar-jail-cell-perspective-locked.jpg" width="100%" />-->
       </div>
     </div>
     
@@ -133,65 +139,68 @@
   
   
  <!-- FOOTER -->
-  <div class="footer">
+ <div class="footer">
     <div class="container-fluid bottom footer-cols">
-        <div class="col-md-3">
-          <a href="index.html">
-            <img class="footer-logo" src="images/wci-logo-white.png" alt="WCI Home" />
-          </a>
-          <br />
+      <div class="row">
+        <div class="col-md-3 col-sm-3 footer-buffer">          
           <ul class="footer-socials">            
             <li>
-              <a href="https://www.facebook.com/workforceconnections" title="WCI on Facebook">
+              <a href="https://www.facebook.com/workforceconnections" title="WCI on Facebook" target="_blank">
                 <i class="fa fa-facebook-square"></i>
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/search?q=workforce+connections" title="WCI on Twitter">
+              <a href="https://twitter.com/search?q=workforce+connections" title="WCI on Twitter" target="_blank">
                 <i class="fa fa-twitter-square"></i>
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/company/workforce-connections-inc-" title="WCI on LinkedIn">
+              <a href="https://www.linkedin.com/company/workforce-connections-inc-" title="WCI on LinkedIn" target="_blank">
                 <i class="fa fa-linkedin-square"></i>
               </a>
             </li>
           </ul>
           
-          <ul class="footer-staff ">
+          <ul class="footer-staff">
             <li>
-              <a href="#" title="">Staff Email</a>
+              <a href="http://outlook.office365.com/" title="Staff Email" target="_blank">Staff Email</a>
             </li>
             <li>
-              <a href="#" title="">WCI Portal</a>
+              <a href="http://wciweb.workforceconnections.org/WebPortal/LogIn.aspx?ReturnUrl=%2fwebportal%2fdefault.aspx" title="WCI Portal" target="_blank">WCI Portal</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <span class="copy">&copy; 2010 Workforce Connections, Inc.</span>
             </li>
           </ul>
         </div>
       
-        <div class="col-md-3 address">
+        <div class="col-md-3 col-sm-3 address footer-buffer">
             <p>2615 East Avenue South, Suite 103</p>
             <p>La Crosse, WI 54601</p>
-            <p><i class="fa fa-mobile"></i> &nbsp; 1-800-742-5627 TOLL-FREE</p>
-            <p><i class="fa fa-mobile"></i> &nbsp; 608-789-5620 LOCAL</p>
-            <p><i class="fa fa-mobile"></i> &nbsp; TTY Users call through the Wisconsin Relay System</p>
-            <p>1-800-WI-RELAY (947-3529)</p>
+            <p><i class="fa fa-phone-square"></i> &nbsp; 1-800-742-5627 TOLL-FREE</p>
+            <p><i class="fa fa-phone-square"></i> &nbsp; 608-789-5620 LOCAL</p>
+            <p><i class="fa fa-phone-square"></i> &nbsp; TTY Users call through the Wisconsin Relay System: 1-800-WI-RELAY (947-3529)</p>
             <p>
               <a href="mailto:workforceconnections@workforceconnections.org">
                 <i class="fa fa-envelope-o"></i> &nbsp; Email Workforce Connections, Inc.
               </a> 
             </p>
         </div>
+ 
       
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-3 footer-buffer">
           <p>Workforce Connections, Inc. administers employment and training programs funded through a variety of sources including the United States Department of Labor, the Wisconsin Department of Workforce Development, the Western Wisconsin Workforce Development Board. Inc., local employers, and community organizations.</p>
         </div>
+
       
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-3 footer-buffer">
           <p class="bold">Affirmative Action/Equal Employment Opportunity Employer/Program</p>
           <p>Auxiliary aids and services are available upon request to individuals with disabilities.</p>
           <p>Application materials received may be considered for other openings in the organization.</p>
         </div>
-
+      </div>
     </div>
   </div><!-- end footer -->
   
