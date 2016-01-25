@@ -360,7 +360,7 @@ figcaption {
     
     a {
       color: @color3;
-      height: 20px;
+      height: 30px;
 //      margin-top: 5px;
       font-weight: 600;
 
@@ -424,6 +424,9 @@ figcaption {
     left: 30px;
   }
 }
+
+
+
 
 // INDEX PAGE HEADER =================
 
@@ -934,7 +937,6 @@ img {
   .container {
     width: 100%;  
   }
-
 }
 
 /* Extra Small Devices, Phones */ 
@@ -959,6 +961,7 @@ img {
   .container {
     width: 100%;  
   }
+
 }
 
 /* Small Devices, Tablets */
@@ -983,6 +986,7 @@ img {
   .container {
     width: 80%;  
   }
+ 
 }
 
 /* Medium Devices, Desktops */
@@ -1058,22 +1062,94 @@ img {
     }
     .navbar-nav>li {
         float: none;
+        background-color: lightgrey;
+        color: black;
     }
     .navbar-nav>li>a {
         padding-top: 10px;
         padding-bottom: 10px;
+      color: black;
+        &:hover {
+          color: @color7;
+        }
     }
     .collapse.in{
         display:block !important;
+      background-color: lightgrey;
+       color: black;
     }
    .navbar-nav .open .dropdown-menu {
        position: static;
        float: none;
        width: auto;
        margin-top: 0;
-       background-color: transparent;
+       background-color: lightgrey;
+       color: black;
        border: 0;
        -webkit-box-shadow: none;
        box-shadow: none;
     }
+  
+  
+//  ===
+  
+  .nav {
+    padding-top: 5px;
+    height: 60px;
+    
+    a {
+      color: black;
+      background-color: lightgrey;
+      height: 30px;
+      font-weight: 600;
+
+      &:hover, &:focus {
+        color: @color7;
+        background-color: lightgrey;
+        text-shadow: 1px 1px 1px #000;
+      }
+    }
+    
+    .open {
+      a {
+        background-color: lightgrey;    
+        text-shadow: none;
+        
+        &:hover {
+          background-color: lightgrey;
+          text-shadow: none;
+        }
+        &:focus {
+          background-color: lightgrey;
+          text-shadow: none;
+        }
+      }
+    }
+  
+    .dropdown-menu {
+      width: 100%;   
+      background-color: lightgrey;
+      color: black;
+      li {
+        a:hover {
+          background-color: lightgrey;
+          background-image: none;
+        }
+      }
+    }
+    
+    .drop-links {
+      color: black;
+      height: 2em;
+      word-wrap: normal;
+      
+      &:hover, &:focus {
+        color: @color7;
+      }      
+      
+    }
+  }
 }
+
+
+
