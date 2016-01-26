@@ -20,6 +20,7 @@
   background-color: @color7;
   color: @color3;
   border: none;
+  border-radius: none;
 }
 
 //* {
@@ -811,8 +812,8 @@ figcaption {
   background-color: @color6; 
   color: @color3;
   border-bottom: 5px solid @color8;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
   
   .close {
     color: @color3;
@@ -823,15 +824,16 @@ figcaption {
 .modal-footer {
   background-color: @color1; 
   border-top: 5px solid @color2;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 .prog-btn {
   background-color: @color9;
   color: @color3;
-  border-radius: 5px;
+  border-radius: none;
   border: none;
+  padding: 5px 10px;
   -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
   box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
   text-shadow: -1px -1px 0 rgba(15,73,168,0.66) ;
@@ -1052,9 +1054,12 @@ img {
 //    }
   
     .navbar-other { 
+      position: relative;
+//      background-color: rgb(91,91,91);
+      
       .nav {
-//        padding-top: 5px;
         height: 220px;
+        background-color: rgb(91,91,91);
       }
     }
     
@@ -1084,19 +1089,26 @@ img {
     }
     .navbar-nav>li {
         float: none;
+        background-color: rgb(91,91,91);
     }
     .navbar-nav>li>a {
         padding-top: 10px;
         padding-bottom: 10px;
         color: white;
+        background-color: rgb(91,91,91);
         &:hover {
           color: @color7;
+          background-color: rgb(91,91,91);
         }
     }
     .collapse.in{
       display:block !important;
       background-color: rgb(91,91,91);
       height: 220px;
+      width: 65%;
+      position: absolute;
+      top: 60px;
+      right: 0;
     }
    .navbar-nav .open .dropdown-menu {
        position: static;
